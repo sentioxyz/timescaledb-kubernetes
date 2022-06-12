@@ -61,7 +61,6 @@ https://www.postgresql.org/docs/current/app-psql.html#APP-PSQL-INTERPOLATION
             \gexec
             \c :"dbname"
             CREATE EXTENSION IF NOT EXISTS timescaledb;
-            CREATE EXTENSION IF NOT EXISTS promscale;
         - name: PGPASSWORD
           valueFrom:
             secretKeyRef:

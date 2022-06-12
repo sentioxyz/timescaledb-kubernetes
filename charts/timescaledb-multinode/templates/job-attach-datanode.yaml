@@ -63,7 +63,6 @@ https://www.postgresql.org/docs/current/app-psql.html#APP-PSQL-INTERPOLATION
         - name: SQLCOMMAND
           value: |
             \c :"dbname"
-            CREATE EXTENSION IF NOT EXISTS promscale;
             SELECT *
               FROM add_data_node(:'data_node_name'::name, host => :'data_node_dns', if_not_exists => true)
         - name: PGPASSWORD
